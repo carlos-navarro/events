@@ -16,8 +16,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-      - run: npm install
-      - run: npm run build
+      
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./agenda
+
+      - name: Build static site
+        run: npm run build
+        working-directory: ./agenda
      
       - name: Deploy to ghpages branch
         uses: peaceiris/actions-gh-pages@v3
