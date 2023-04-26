@@ -15,7 +15,7 @@ import dotenv from 'rollup-plugin-dotenv';
 import { summitCfg } from './src/config/summits.js';
 
 const production = !process.env.ROLLUP_WATCH;
-const docsAgenda = '../docs/agenda'
+const docsAgenda = 'docs'
 const buildDirectory = production ? docsAgenda : 'public/build';
 const nanoid = customAlphabet('1234567890abcdefghijklmnopqrstuvwxyz', 6);
 
