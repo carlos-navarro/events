@@ -7,7 +7,7 @@ export const learning_thursdays = [
         title: 'Advanced GitHub Pages',
         authors: 'Thomas Dupoiron, GitHub',
         abstract: '<h6>What you will learn:</h6> Pages at a glance in GitHub Enterprse Server and Cloud. Pages address. Pages visibility. Network Access Control. Static IPs. Custom domains.',
-        tags: ['GitHub Learning Pill'],
+        tags: ['GitHub Learning Pill', 'Does it work'],
         sessionLink: ''
     },
 ];
