@@ -3,10 +3,21 @@ name: Events Agenda republishing
 on:
   push:
     branches: [ main ]
-
+    paths:
+      - 'agenda/src/config/**.js'
+    
 jobs:
   build:
 
+    # GHES
+    #runs-on: self-hosted
+    
+    # GHES runner-group
+    #runs-on:
+    #  group: engineering-runner-group
+    #  labels: [ self-hosted, linux, openpaas ]
+    
+    # GHEC 
     runs-on: ubuntu-latest
 
     steps:
